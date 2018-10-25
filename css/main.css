@@ -1,0 +1,73 @@
+body {}
+p {margin-bottom: 0px;}
+header {
+    background: url(image/BG-head.png) no-repeat;
+    padding-top: 50px;
+    color: white !important;
+}
+input {outline:none;}
+a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+a:hover {
+    text-decoration: none;
+    color: #F99229;
+}
+header a {color: white;}
+#shapka h1 {transition: all 0.4s ease;}
+.phone {float: right;}
+#shfoo {
+    padding-bottom: 170px;
+}
+.form {
+    background: #FFFFFF;
+    box-shadow: 0 2px 20px 0 rgba(30,40,51,0.30);
+    color: #000;
+    border-radius: 5px;
+    padding: 35px 25px 0 25px;
+    width: 100%;
+    float: right;
+}
+.form input {
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+    margin: 5px 0;
+}
+.form h2 {color: #F99229;}
+.button {
+    background: #F99229;
+    box-shadow: 0 2px 14px 0 rgba(191,43,101,0.40);
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.01px;
+    border-radius: 5px;
+}
+.table {text-align: center;}
+.table img {
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.space {
+    height: 80px;
+    width: 100%;
+}
+.stick {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+
+
+.nazvanie {
+    margin-right: auto;
+}
+#pict img {
+    margin: 50px 0 40px 110px;
+}
+#pict-text p {
+    margin-top: 20px;
+}
