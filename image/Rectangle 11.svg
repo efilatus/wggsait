@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="149px" height="135px" viewBox="0 0 149 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="110.485682%" cy="169.029802%" fx="110.485682%" fy="169.029802%" r="194.014793%" gradientTransform="translate(1.104857,1.690298),scale(0.907994,1.000000),rotate(-124.890230),translate(-1.104857,-1.690298)" id="radialGradient-1">
+            <stop stop-color="#301E72" offset="0%"></stop>
+            <stop stop-color="#3567BE" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SMM" transform="translate(-97.000000, -5217.000000)" fill="url(#radialGradient-1)">
+            <g id="Products" transform="translate(-48.000000, 4931.000000)">
+                <path d="M221.126199,286.746537 L250.972334,288.914111 C275.996828,290.731514 294.809893,312.491171 292.992491,337.515665 C292.810768,340.017864 292.422091,342.500711 291.830445,344.938739 L291.830445,344.938739 C283.966826,377.342768 259.864638,403.35268 228.152253,413.657154 L213.844163,418.306358 C186.48025,427.197859 157.08943,412.223011 148.197928,384.859099 C146.729896,380.341177 145.886698,375.643693 145.691777,370.897248 L145.255261,360.267782 C143.650789,321.197807 174.022579,288.224653 213.092554,286.620181 C215.770669,286.5102 218.452868,286.552386 221.126199,286.746537 Z" id="Rectangle-11"></path>
+            </g>
+        </g>
+    </g>
+</svg>

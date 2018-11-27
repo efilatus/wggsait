@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="2416px" viewBox="0 0 1440 2416" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>BG_elements_2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#0C3483" offset="0%"></stop>
+            <stop stop-color="#6B8CCE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-2">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="40.6687866%" y2="63.1115529%" id="linearGradient-3">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="86.4704078%" y1="5.58752483%" x2="22.6471242%" y2="75.0198406%" id="linearGradient-4">
+            <stop stop-color="#3357AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="79.0673551%" y1="85.6142835%" x2="0%" y2="42.3294573%" id="linearGradient-5">
+            <stop stop-color="#0C3483" offset="0%"></stop>
+            <stop stop-color="#6B8CCE" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SMM" transform="translate(0.000000, -3121.000000)">
+            <g id="BG_elements_2" transform="translate(-432.000000, 3085.000000)">
+                <rect id="Rectangle-7" fill="url(#linearGradient-1)" opacity="0.100000001" transform="translate(580.026532, 405.026532) scale(1, -1) rotate(-330.000000) translate(-580.026532, -405.026532) " x="283.526532" y="108.526532" width="593" height="593" rx="100"></rect>
+                <rect id="Rectangle-7" stroke="url(#linearGradient-2)" opacity="0.100000001" transform="translate(405.026532, 847.500000) scale(1, -1) rotate(-330.000000) translate(-405.026532, -847.500000) " x="109.026532" y="551.5" width="592" height="592" rx="100"></rect>
+                <path d="M1023.82586,1125.79933 C968.873532,1125.79933 924.325865,1170.347 924.325865,1225.29933 L924.325865,2177.27328 C924.325865,2232.22561 968.873532,2276.77328 1023.82586,2276.77328 L1975.79981,2276.77328 C2030.75215,2276.77328 2075.29981,2232.22561 2075.29981,2177.27328 L2075.29981,1225.29933 C2075.29981,1170.347 2030.75215,1125.79933 1975.79981,1125.79933 L1023.82586,1125.79933 Z" id="Rectangle-7" stroke="url(#linearGradient-3)" opacity="0.100000001" transform="translate(1499.812839, 1701.286307) scale(1, -1) rotate(-330.000000) translate(-1499.812839, -1701.286307) "></path>
+                <path d="M523.700109,726.192748 L523.700109,726.192748 C546.623991,726.192748 565.20747,744.776227 565.20747,767.700109 L565.20747,767.700109 C565.20747,790.623991 546.623991,809.20747 523.700109,809.20747 L523.700109,809.20747 C500.776227,809.20747 482.192748,790.623991 482.192748,767.700109 L482.192748,767.700109 C482.192748,744.776227 500.776227,726.192748 523.700109,726.192748 Z" id="Rectangle-7" fill="url(#linearGradient-4)" opacity="0.100000001" transform="translate(523.700109, 767.700109) scale(1, -1) rotate(-330.000000) translate(-523.700109, -767.700109) "></path>
+                <rect id="Rectangle-7" fill="url(#linearGradient-5)" opacity="0.0299999993" transform="translate(1842.807990, 1414.807990) scale(1, -1) rotate(-330.000000) translate(-1842.807990, -1414.807990) " x="1645.29483" y="1217.29483" width="395.026314" height="395.026314" rx="100"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
