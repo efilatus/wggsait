@@ -16,7 +16,8 @@ $(document).ready(function () {
         margin:10,
         nav: true,
         dots: false,
-        items:1
+        items:1,
+        startPosition: 'URLHash'
     });
     $( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
     $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
