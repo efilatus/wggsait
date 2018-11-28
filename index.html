@@ -31,7 +31,7 @@
                             <a href="">Контакты</a>
                         </div>
                         <div class="col-md-3 shapka-text">
-                            <p class="phone">+7 (495) 641-95-09</p>
+                            <p class="phone"><a href="">+7 (495) 641-95-09</a></p>
                         </div>
                     </div>
                 </div>
@@ -87,6 +87,8 @@
 
         <div id="telo">
             
+            <div id="bg_1"></div>
+                
             <div id="why">
                 <div class="container">
                     <h2>ПОЧЕМУ У НАС РАБОТАЮТ<br>ПРОФЕССИОНАЛЬНЫЕ КАДРЫ</h2>
@@ -134,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            
+                
             <div id="how">
                 <div class="container">
                     <h2>КАК РЕАЛЬНО РАБОТАЕТ<br>SMM В 2018</h2>
@@ -227,6 +229,8 @@
                     <img class="white" src="image/Rectangle%209.svg" alt="9">
                 </div>
             </div>
+            
+            <div id="bg_2"></div>
             
             <div id="company">
                 <div class="container">
@@ -350,6 +354,8 @@
                 <img src="image/Video_block.svg" alt="Video_block">
             </div>
             
+            <div id="bg_3"></div>
+            
             <div id="form">
                 <div class="form">
                     <h5>Оставьте заявку и вам перезвонит наш менеджер, чтобы ответить на все ваши вопросы.</h5>
@@ -357,13 +363,96 @@
                     <input type="text" placeholder="E-mail">
                     <input type="text" placeholder="Телефон">
                     <button class="button">Отправить</button>
-                    <input type="checkbox" id="check" value="check">
-                    <label for="check">Принимаю условия «Соглашения на обработку персональных данных» и даю согласие на обработку моих персональных данных</label>
+                    <input type="checkbox" id="check2" value="check2">
+                    <label for="check2">Принимаю условия «Соглашения на обработку персональных данных» и даю согласие на обработку моих персональных данных</label>
                 </div>
             </div>
             
             <div id="mapping">
-                
+                <div id="map" class="map">
+                    <script>
+                        var markers = [
+                            {"latlng":{"lat":55.796351,"lng":37.581015},"address":"Вятская 27К7"},
+                            {"latlng":{"lat":55.796272,"lng":37.580183},"address":"Вятская 27/7"}
+                        ];
+                        var markersMap=[];
+                        function initMap() {
+                            var image = 'image/iconmap.svg';
+
+                            var LatLng;
+                            var mapOptions = {zoom: 18};
+                            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                            for (var i=0;i<markers.length;i++) {
+                                LatLng = markers[i]['latlng'];
+                                WorldMap(map, LatLng, markers[i]['address']);
+                            }
+                            geo = new google.maps.Geocoder();
+                            $(document).ready(function() {
+                                $( "#search" ).submit(function( event ) {
+                                    event.preventDefault();
+                                    address = $(this).find("input").val();
+                                    geo.geocode({'address':address},function(results,status){
+                                        if (status == google.maps.GeocoderStatus.OK){
+                                            LatLng = results[0].geometry.location;
+                                            removeMarkers();
+                                            WorldMap(map, LatLng, address);
+                                        }else{
+                                            alert(status);
+                                        }   
+                                    });
+                                });
+                            });
+                            function WorldMap(map, LatLng, address='') {
+
+                                map.setCenter(LatLng);
+                                var marker = new google.maps.Marker({
+                                    position: LatLng,
+                                    map: map,
+                                    icon: image
+                                });
+                                var id = markersMap.length;
+                                markersMap.push(marker);
+                                google.maps.event.addListener(marker, "click", function() {
+                                    $(document).ready(function() {
+                                        $('#delete_button').attr('data-id', id);
+                                        $('#overlay').fadeIn(400, function(){
+                                            $('#form-map').html(address);
+                                            $('#map-dialog').css('display', 'block');
+                                            $('body').css({'overflow-y':'hidden'});
+                                        });
+
+                                        $('#modal_close2, #overlay').click( function(){
+                                            $('#map-dialog').fadeOut(function(){
+                                                $(this).css('display', 'none');
+                                                $('#overlay').fadeOut(400);
+                                                $('body').css({'overflow-y':'inherit'});
+                                            });
+                                        });
+
+                                        $('#delete_button').click(function() {
+                                            markersMap[id].setMap(null);
+                                            console.log(markersMap);
+                                            console.log(id);
+                                            $('#map-dialog').css('display', 'none');
+                                            $('#overlay').fadeOut(400);
+                                            $('body').css({'overflow-y':'inherit'});
+
+                                        });
+                                    });
+
+
+                                });
+                            }
+                            function removeMarkers() {
+                                for (i = 0; i < markersMap.length; i++) {
+                                    markersMap[i].setMap(null);
+                                }
+                                //markersMap = [];
+                            } 
+                        }
+                    </script>
+                </div>
             </div>
 
         </div>
@@ -371,7 +460,36 @@
         <footer>
             <div class="container">
                 <div class="row">
-
+                    <div class="col-md-3">
+                        <img src="image/Logo.svg" alt="logo">
+                    </div>
+                    <div class="col-md-6 shapka-text">
+                        <a href="">Аргументы</a>
+                        <a href="">Кейсы</a>
+                        <a href="">Клиенты</a>
+                        <a href="">Продукты</a>
+                        <a href="">Контакты</a>
+                    </div>
+                    <div class="col-md-3 shapka-text">
+                        <p class="phone"><a href="">+7 (495) 641-95-09</a></p>
+                    </div>
+                    <div class="col-md-3 text-footer">
+                        <p>ООО «Веб Дженерейшн Групп»</p>
+                        <p>127015, г. Москва,</p>
+                        <p>ул. Вятская, д. 27, строение 7, этаж 2,</p>
+                        <p>помещение XVII, комната 80</p>
+                    </div>
+                    <div class="col-md-3 text-footer">
+                        <p>ОГРН 1137746135790</p>
+                        <p>ИНН/КПП 7724864671/771401001</p>
+                        <p>Тел.: <a href="">+7 (499) 769-53-10</a>,</p>
+                        <p>e-mail: <a href="">info@wgg.company</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href=""><img src="image/vk.svg" alt=""></a>
+                        <a href=""><img src="image/face.svg" alt=""></a>
+                        <a href=""><img src="image/inst.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -389,6 +507,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARU8Ok4SGNm1en1oQkQ7n3Hxz3gNQYfl8&callback=initMap"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
     </body>
