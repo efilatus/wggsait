@@ -5,10 +5,10 @@ body {
 p {margin-bottom: 0px;}
 button {outline: none;}
 header {
-    background: url(image/BG-head.png) no-repeat;
-    padding-top: 50px;
-    color: white !important;
-    height: 1040px;
+    background: url(image/BG-head2.png) no-repeat bottom;
+    /*padding-top: 50px;*/
+    color: #F99229 !important;
+    height: 965px;
 }
 input {outline:none;}
 a {
@@ -92,6 +92,10 @@ header a {color: white;}
     height: 40px;
     margin-bottom: 10px;
     outline: none;
+}
+.button:hover {
+    box-shadow: 0 2px 20px #F99229;
+    background: #F97500;
 }
 .table {text-align: center;}
 .table img {
@@ -289,3 +293,19 @@ footer a {
 }
 footer .col-md-6 {margin-bottom: 30px;}
 footer .text-footer {font-size: 12px;}
+
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: -70px;
+    width: 115%;
+}

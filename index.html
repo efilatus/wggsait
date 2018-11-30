@@ -15,8 +15,14 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-
+    
         <header>
+            <div class="fullscreen-bg">
+                <video loop muted autoplay poster="video/plane.jpg" class="fullscreen-bg__video">
+                    <source src="book.mp4" type="video/mp4">
+                    <source src="book.webm" type="video/webm">
+                </video>
+            </div>
             <div id="shapka">
                 <div class="container">
                     <div class="row">
@@ -24,11 +30,12 @@
                             <img src="image/Logo.svg" alt="logo">
                         </div>
                         <div class="col-md-6 shapka-text">
-                            <a href="">Аргументы</a>
-                            <a href="">Кейсы</a>
-                            <a href="">Клиенты</a>
-                            <a href="">Продукты</a>
-                            <a href="">Контакты</a>
+                            <a href="#why" class="go_to" data-menu="argum">Аргументы</a>
+                            <a href="#cases" class="go_to" data-menu="cases">Кейсы</a>
+                            <a href="#company" class="go_to" data-menu="klient">Клиенты</a>
+                            <a href="#product" class="go_to" data-menu="product">Продукты</a>
+                            <a href="#mapping" class="go_to" data-menu="contact">Контакты</a>
+                            <div class="scroll"></div>
                         </div>
                         <div class="col-md-3 shapka-text">
                             <p class="phone"><a href="">+7 (495) 641-95-09</a></p>
@@ -59,7 +66,7 @@
                         <div class="space"></div>
                         <div class="col-md-4">
                             <div class="table">
-                                <img src="image/sh1.png" alt="">
+                                <img src="image/sh11.png" alt="">
                                 <p>УЧАСТНИК ЗАКРЫТОГО КЛУБА DIGITAL-<br>АГЕНТСТВ RUWARD</p>
                             </div>
                         </div>
@@ -68,7 +75,7 @@
                                 <div class="ig">
                                     <div class="fab fa-vk fa-3x"></div>
                                     <b class="stick">|</b>
-                                    <img src="image/sh2.png" alt="">
+                                    <img src="image/sh12.png" alt="">
                                 </div>
                                 <p>УСЕРТИФИЦИРОВАННЫЙ ПАРТНЕР<br>ВКОНТАКТЕ И MAIL GROUP</p>
                             </div>
@@ -83,8 +90,7 @@
                 </div>
             </div>
         </header>
-
-
+        
         <div id="telo">
             
             <div id="bg_1"></div>
@@ -172,7 +178,7 @@
             <div id="cases">
                 <div class="container">
                     <h2>НАШИ КЕЙСЫ</h2>
-                    <div class="row">
+                    <div class="row links">
                         <div class="col-md-3">
                             <div class="row">
                                 <div class="col-md-6 pl-1">
@@ -474,9 +480,9 @@
                     </script>
                 </div>
             </div>
-
+            
         </div>
-
+        
         <footer>
             <div class="container">
                 <div class="row">
@@ -513,17 +519,9 @@
                 </div>
             </div>
         </footer>
-
-
-
-
-
-
-
-
+        
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
